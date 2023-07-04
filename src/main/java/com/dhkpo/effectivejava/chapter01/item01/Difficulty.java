@@ -1,2 +1,4 @@
-package com.dhkpo.effectivejava.chapter01.item01;public class Difficulity {
+package com.dhkpo.effectivejava.chapter01.item01;
+
+public class Difficulty {
 }

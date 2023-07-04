@@ -1,2 +1,8 @@
-package com.dhkpo.effectivejava.chapter01.item01;public class EnglishHelloService {
+package com.dhkpo.effectivejava.chapter01.item01;
+
+public class EnglishHelloService implements HelloService {
+    @Override
+    public String hello() {
+        return "hello.";
+    }
 }

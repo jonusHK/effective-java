@@ -1,2 +1,7 @@
-package com.dhkpo.effectivejava.chapter01.item01;public class AdvancedSettings {
+package com.dhkpo.effectivejava.chapter01.item01;
+
+public class AdvancedSettings {
+
+    Settings settings;
+
 }

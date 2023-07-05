@@ -1,5 +1,9 @@
 package com.dhkpo.effectivejava.chapter01.item01;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.Stream;
+
 /**
  * 생성자 대신 정적 팩토리 메서드를 고려하라.
  */
@@ -10,6 +14,8 @@ public class Order {
     private boolean urgent;
 
     private Product product;
+
+    private OrderStatus orderStatus;
 
     /*
     public Order(Product product, boolean prime) {
@@ -35,5 +41,11 @@ public class Order {
         order.urgent = true;
         order.product = product;
         return order;
+    }
+
+    public static void main(String[] args) {
+        Arrays.stream(OrderStatus.values()).forEach(System.out::println);
+
+        System.out.println(OrderStatus.DELIVERED.ordinal());
     }
 }

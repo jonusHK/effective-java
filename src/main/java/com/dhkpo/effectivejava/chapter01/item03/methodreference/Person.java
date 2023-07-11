@@ -13,6 +13,8 @@ public class Person {
         return a.birthday.compareTo(b.birthday);
     }
 
+    public Person() {}
+
     public Person(LocalDate birthday) {
         this.birthday = birthday;
     }
@@ -28,12 +30,5 @@ public class Person {
         people.add(new Person(LocalDate.of(2021, 4, 15)));
 
         people.sort(Person::compareByAge);
-
-        List<LocalDate> dates = new ArrayList<>();
-        dates.add(LocalDate.of(1991, 2, 20));
-        dates.add(LocalDate.of(1990, 9, 11));
-        dates.add(LocalDate.of(2021, 4, 15));
-
-        dates.stream().map(Person::new).collect(Collectors.toList());
     }
 }

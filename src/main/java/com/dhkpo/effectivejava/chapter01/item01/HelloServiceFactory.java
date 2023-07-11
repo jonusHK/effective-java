@@ -3,7 +3,6 @@ package com.dhkpo.effectivejava.chapter01.item01;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.Arrays;
 import java.util.ServiceLoader;
 
 public class HelloServiceFactory {

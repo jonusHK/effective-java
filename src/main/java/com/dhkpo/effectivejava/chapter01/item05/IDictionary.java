@@ -1,5 +1,7 @@
 package com.dhkpo.effectivejava.chapter01.item05;
 
+import org.springframework.stereotype.Component;
+
 import java.util.List;
 
 public interface IDictionary {

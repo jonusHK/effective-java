@@ -9,8 +9,8 @@ public class PostRepository {
     private Map<CacheKey, Post> cache;
 
     public PostRepository() {
-        // this.cache = new WeakHashMap<>(); // WeakHashMap 을 사용하면, 참조되지 않은 객체가 gc 에 의해 제거됨
-        this.cache = new HashMap<>();
+        this.cache = new WeakHashMap<>(); // WeakHashMap 을 사용하면, 참조되지 않은 객체가 gc 에 의해 제거됨
+        // this.cache = new HashMap<>();
     }
 
     public Post getPostById(Integer id) {

@@ -3,6 +3,7 @@ package com.dhkpo.effectivejava.chapter01.item08.autocloseable;
 import java.io.BufferedInputStream;
 import java.io.IOException;
 
+// 파일 및 소켓과 같은 IO 관련한 경우, Closeable 을 구현해도 된다. (close() 메서드에서 IOException 를 throw 함)
 public class AutoCloseableIsGood implements AutoCloseable {
 
     private BufferedInputStream inputStream;

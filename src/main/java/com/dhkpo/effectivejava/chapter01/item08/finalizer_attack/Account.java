@@ -20,6 +20,6 @@ public class Account {
     }
 
     // finalize 를 상속 받지 못하게 하여 finalizer 공격을 막을 수 있다.
-    @Override
-    protected final void finalize() throws Throwable {}
+    // @Override
+    // protected final void finalize() throws Throwable {}
 }

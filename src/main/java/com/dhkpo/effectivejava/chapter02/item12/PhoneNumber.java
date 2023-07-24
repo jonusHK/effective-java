@@ -33,9 +33,9 @@ public class PhoneNumber {
     public static PhoneNumber of(String phoneNumberString) {
         String[] split = phoneNumberString.split("-");
         PhoneNumber phoneNumber = new PhoneNumber(
-                Short.parseShort(split[0]),
-                Short.parseShort(split[1]),
-                Short.parseShort(split[2]));
+                Integer.parseInt(split[0]),
+                Integer.parseInt(split[1]),
+                Integer.parseInt(split[2]));
         return phoneNumber;
     }
 
